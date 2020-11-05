@@ -12,6 +12,7 @@ public class LogSearch {
                 listClone.add(line + " | line number: " +i);
             }
         }
+        System.out.println(" Search results: " + listClone.size());
         return listClone;
     }
 }

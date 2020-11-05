@@ -4,10 +4,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> Text = FileUtil.read("src/main/resources/Text");
-        List<String> result = LogSearch.search(Text,"mailbox");
+        List<String> Text = FileUtil.read(args[0]);
+        List<String> result = LogSearch.search(Text,args[1]);
         result.forEach(System.out::println);
-
-        // zliczanie ilosci wystapien danego wyrazenia w tekscie
     }
 }
