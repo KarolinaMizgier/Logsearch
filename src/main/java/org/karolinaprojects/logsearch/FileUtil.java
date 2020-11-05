@@ -18,7 +18,7 @@ public class FileUtil {
             }
             scanner.close();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            throw new RuntimeException("File not found");
         }
 
         return textList;
